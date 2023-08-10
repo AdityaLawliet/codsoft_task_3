@@ -1,0 +1,94 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+}
+
+:root{
+  --primary: #05445E;
+  --secondary: #189AB4;
+  --light:#75E6DA;
+  --lightest:#D4F1F4;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  line-height: 1;
+  color: var(--primary);
+  overflow: hidden;
+  height: 100vh;
+  background: linear-gradient(to top left, #75E6DA,#D4F1F4 );
+}
+
+MAIN{
+  padding: 10rem 10%;  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+h1{
+  text-align: center;
+  font-size: 7rem;
+  margin-bottom: 5rem;
+}
+
+.calculator{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 2rem;
+  grid-gap: 1rem;
+  background-color: #189ab45f;
+  text-align: center;
+  border-radius: 2rem;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
+  border-radius: 1rem;
+}
+
+
+.display {
+  grid-column: span 4;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  font-size: 2rem;
+  text-align: right;
+}
+
+.btn {
+color:var(--lightest) ;
+  background-color: var(--primary);
+  border-radius: 0.5rem;
+  padding: 1.5rem 2rem;
+  font-size: 2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
+
+}
+
+.btn:hover {
+  background-color: var(--secondary);
+  transform: scale(1.01);
+}
+
+#add{
+  grid-row: span 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#equals{
+  grid-column: span 2;
+}
+
